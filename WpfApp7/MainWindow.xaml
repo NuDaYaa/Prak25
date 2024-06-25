@@ -1,0 +1,17 @@
+<Window x:Class="SemiCircleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SemiCircleApp" Height="350" Width="525">
+    <Grid>
+        <Canvas Name="MyCanvas" Background="White" Margin="10,10,250,10"/>
+        <Button Name="UpButton" Content="Up" Click="MoveUp_Click" FontSize="10" Margin="413,60,59,231"/>
+        <Button Name="DownButton" Content="Down" Click="MoveDown_Click" FontSize="10" Margin="413,88,59,203" />
+        <Button x:Name="RightButton" Content="Right" Click="MoveRight_Click" FontSize="10" Margin="458,74,31,216" RenderTransformOrigin="0.914,0.371"/>
+        <Button Name="LeftButton" Content="Left" Click="MoveLeft_Click" FontSize="10" Margin="385,74,104,216"/>
+        <Button Name="ShowButton" Content="Show" Click="Show_Click" Margin="395,121,42,149"/>
+        <Button Name="HideButton" Content="Hide" Click="Hide_Click" Margin="395,175,42,99"/>
+        <TextBox Name="XCoordinateTextBox" Margin="385,225,24,54" Text="x"/>
+        <TextBox Name="YCoordinateTextBox" Margin="385,270,24,10" Text="y"/>
+        <Button Name="MoveButton" Content="Move" Click="MoveButton_Click" RenderTransformOrigin="0.48,0.486" Margin="302,245,135,29"/>
+    </Grid>
+</Window>
